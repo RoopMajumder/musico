@@ -40,7 +40,7 @@ function App() {
           </Routes>
         </div>
         </HashRouter>
-      <p id='cr'>Copyright &copy; <a href="https://www.instagram.com/technical_earth_studios/" target='_blank'>Technical Earth Studios</a></p>
+      <p id='cr'>Copyright &copy; Made with ❤ by <a href="https://www.instagram.com/roop_majumder5/" target='_blank'>Roop Majumder</a></p>
       </div>
     </>
   )
