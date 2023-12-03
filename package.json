@@ -1,8 +1,8 @@
 {
-  "homepage": "https://roopmajumder.github.io/musico",
+  "homepage": "https://RoopMajumder.github.io/musico",
   "name": "musicappsolo",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,7 +10,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.2.0",
