@@ -10,7 +10,7 @@ const Body = () => {
         <form onSubmit={(e) => e.preventDefault()} className='inputgroup'>
             <div className="inside">
                 <label htmlFor="#sni" id='snl'>Enter song name: </label>
-                <input type="text" id='sni' value={query} onChange={(e) => {setQuery(e.target.value)}}/>
+                <input type="text" id='sni' placeholder='Enter song name...' value={query} onChange={(e) => {setQuery(e.target.value)}}/>
             </div>
             <button type="submit" className='btn' onClick={() => {
                 if(query==null||query===null||query==""||query==="") {
