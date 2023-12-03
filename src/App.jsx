@@ -34,7 +34,7 @@ function App() {
       <div className="main">
         <HashRouter>
         <div id="body">
-          <Routes>
+          <Routes basename="/musico">
             <Route path='/' element={<Body/>}></Route>
             <Route path='/song/:q' element={<Player/>}></Route>
           </Routes>
