@@ -40,7 +40,7 @@ const Player = () => {
       <h4 style={{ textAlign: "center" }} dangerouslySetInnerHTML={{
         __html: songData?.primaryArtists
       }}></h4>
-      <audio src={songData?.downloadUrl[songData?.downloadUrl?.length - 1].link} controls autoPlay controlsList='nodownload'></audio>
+      <audio src={songData?.downloadUrl[songData?.downloadUrl?.length - 1].link} controls autoPlay controlsList='nodownload' onCanPlay={(e) => e.target.play()}></audio>
       {/* <audio src={song} controls></audio> */}
       <button type="button" className='btn-danger' onClick={() => {
         navigate("/")

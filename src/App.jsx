@@ -31,10 +31,12 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
-      <div className="main">
+      <div className="main" onContextMenu={(e) => e.preventDefault()}>
         <HashRouter>
         <div id="body">
-          <Routes basename="/musico">
+          <Routes 
+          basename="/musico"
+          >
             <Route path='/' element={<Body/>}></Route>
             <Route path='/song/:q' element={<Player/>}></Route>
           </Routes>
