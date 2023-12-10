@@ -22,9 +22,9 @@ const Player = () => {
     const setHeader = () => {
       let n = songData?.name
       let r = n;
-      if(n.search("&quot;")) [
+      if(n.search("&quot;")) {
         r = n.replaceAll("&quot;", "\"")
-      ]
+      }
       document.title = `${r} - Musico`
       link.setAttribute("type", "image/jpeg")
       link.setAttribute("href", songData?.image[songData?.image.length - 1]?.link)
@@ -76,7 +76,7 @@ const Player = () => {
       <audio src={
         // songData?.downloadUrl[songData?.downloadUrl?.length - 1].link
         audioData
-      } controls autoPlay controlsList='nodownload' onLoad={(e) => e.target.play()}></audio>
+      } controls autoPlay={true} controlsList='nodownload' onLoadedData={(e) => e.target.play()}></audio>
       {/* <audio src={song} controls></audio> */}
       <button type="button" className='btn-danger' onClick={() => {
         navigate("/")
