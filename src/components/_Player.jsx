@@ -4,7 +4,9 @@ import { useNavigate } from 'react-router-dom'
 
 const Player = () => {
     const {q} = useParams()
+    const link = document.querySelector('link[rel="icon"]');
     const [songData, setSongData] = useState()
+    const [audioData, setAudioData] = useState()
     const navigate = useNavigate()
     // const [song, setSong] = useState()
 
@@ -17,6 +19,16 @@ const Player = () => {
         // console.log(song)
     }
 
+    const setHeader = () => {
+      let n = songData?.name
+      let r = n;
+      if(n.search("&quot;")) [
+        r = n.replaceAll("&quot;", "\"")
+      ]
+      document.title = `${r} - Musico`
+      link.setAttribute("type", "image/jpeg")
+      link.setAttribute("href", songData?.image[songData?.image.length - 1]?.link)
+    }
     // const fetchSong = async (s) => {
     //     let response = await fetch(s)
     //     let data = await response.blob()
@@ -27,6 +39,27 @@ const Player = () => {
     //         setSong(fr.result);
     //     }
     // }
+
+    const setAudio = async () => {
+      const a = songData?.downloadUrl[songData?.downloadUrl?.length - 1].link
+      const response = await fetch(a)
+      const data = await response.blob()
+      const fr = new FileReader()
+      fr.readAsDataURL(data)
+      fr.onload = () => {
+        setAudioData(fr.result)
+      }
+    }
+
+    if(songData) {
+      setHeader()
+      setAudio()
+    }
+    else {
+      document.title = "Musico - Roop Majumder"
+      link.setAttribute("type", "image/svg+xml")
+      link.setAttribute("href", "/logo.svg")
+    }
 
     useEffect(() => {
         getSongData();
@@ -40,7 +73,10 @@ const Player = () => {
       <h4 style={{ textAlign: "center" }} dangerouslySetInnerHTML={{
         __html: songData?.primaryArtists
       }}></h4>
-      <audio src={songData?.downloadUrl[songData?.downloadUrl?.length - 1].link} controls autoPlay controlsList='nodownload' onCanPlay={(e) => e.target.play()}></audio>
+      <audio src={
+        // songData?.downloadUrl[songData?.downloadUrl?.length - 1].link
+        audioData
+      } controls autoPlay controlsList='nodownload' onLoad={(e) => e.target.play()}></audio>
       {/* <audio src={song} controls></audio> */}
       <button type="button" className='btn-danger' onClick={() => {
         navigate("/")

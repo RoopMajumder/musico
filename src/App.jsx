@@ -5,6 +5,7 @@ import './App.css'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import Body from './components/_Body'
 import Player from './components/_Player'
+// import InfoButton from './components/_InfoButton'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -31,7 +32,9 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
-      <div className="main" onContextMenu={(e) => e.preventDefault()}>
+      <div className="main" 
+      // onContextMenu={(e) => e.preventDefault()}
+      >
         <HashRouter>
         <div id="body">
           <Routes 
@@ -42,7 +45,7 @@ function App() {
           </Routes>
         </div>
         </HashRouter>
-      <p id='cr'>Copyright &copy; Made with ❤ by <a href="https://www.instagram.com/roop_majumder5/" target='_blank'>Roop Majumder</a></p>
+      <p id='cr'>Copyright &copy; : All Rights Reserved. Made with ❤ by <a href="https://www.instagram.com/roop_majumder5/" target='_blank'>Roop Majumder</a>.</p>
       </div>
     </>
   )

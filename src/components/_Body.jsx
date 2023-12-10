@@ -1,9 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 const Body = () => {
     const [query, setQuery] = useState("");
+    const link = document.querySelector('link[rel="icon"]');
     const navigate = useNavigate();
+
+    useEffect(() => {
+        document.title = "Musico - Roop Majumder"
+        link.setAttribute("type", "image/svg+xml")
+        link.setAttribute("href", "/logo.svg")
+    }, [])
 
   return (
     <div>
