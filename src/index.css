@@ -176,6 +176,16 @@ input:focus {
   align-items: center;
 }
 
+.btn-group {
+  display: flex;
+  gap: 5px;
+}
+
+.info-container {
+  width: calc(100% - 80px);
+  height: calc(100% - 130px);
+}
+
 @media screen and (max-width: 650px) {
   #body {
     width: 340px;

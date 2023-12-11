@@ -19,6 +19,7 @@ const Body = () => {
                 <label htmlFor="#sni" id='snl'>Enter song name: </label>
                 <input type="text" id='sni' placeholder='Enter song name...' value={query} onChange={(e) => {setQuery(e.target.value)}}/>
             </div>
+            <div className="btn-group">
             <button type="submit" className='btn' onClick={() => {
                 if(query==null||query===null||query==""||query==="") {
                     alert("Enter a valid name!")
@@ -27,6 +28,10 @@ const Body = () => {
                 navigate("/song/"+query)
                 }
             }>Search</button>
+            <button type="button" className='btn' onClick={() => {
+                navigate("/updates")
+            }}>Updates</button>
+            </div>
         </form>
     </div>
   )

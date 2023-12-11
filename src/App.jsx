@@ -5,6 +5,7 @@ import './App.css'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import Body from './components/_Body'
 import Player from './components/_Player'
+import Updates from './components/_Updates'
 // import InfoButton from './components/_InfoButton'
 
 function App() {
@@ -41,11 +42,12 @@ function App() {
           basename="/musico"
           >
             <Route path='/' element={<Body/>}></Route>
+            <Route path='/updates' element={<Updates/>}></Route>
             <Route path='/song/:q' element={<Player/>}></Route>
           </Routes>
         </div>
         </HashRouter>
-      <p id='cr'>Copyright &copy; : All Rights Reserved. Made with ❤ by <a href="https://www.instagram.com/roop_majumder5/" target='_blank'>Roop Majumder</a>.</p>
+      <p id='cr'>&copy; Copyright: All Rights Reserved. Made with ❤ by <a href="https://www.instagram.com/roop_majumder5/" target='_blank'>Roop Majumder</a>.</p>
       </div>
     </>
   )
