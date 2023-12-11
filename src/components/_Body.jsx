@@ -9,7 +9,7 @@ const Body = () => {
     useEffect(() => {
         document.title = "Musico - Roop Majumder"
         link.setAttribute("type", "image/svg+xml")
-        link.setAttribute("href", "/logo.svg")
+        link.setAttribute("href", "../assets/logo.svg")
     }, [])
 
   return (

@@ -44,6 +44,8 @@ const Player = () => {
       const a = songData?.downloadUrl[songData?.downloadUrl?.length - 1].link
       const response = await fetch(a)
       const data = await response.blob()
+      // setAudioData(URL.createObjectURL(data))
+      // console.log(URL.createObjectURL(data))
       const fr = new FileReader()
       fr.readAsDataURL(data)
       fr.onload = () => {
@@ -58,7 +60,7 @@ const Player = () => {
     else {
       document.title = "Musico - Roop Majumder"
       link.setAttribute("type", "image/svg+xml")
-      link.setAttribute("href", "/logo.svg")
+      link.setAttribute("href", "../assets/logo.svg")
     }
 
     useEffect(() => {
