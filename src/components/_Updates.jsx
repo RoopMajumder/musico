@@ -33,7 +33,7 @@ const Updates = () => {
             </ul>
             <br />
             {/* ending */}
-            <h3>Thanks for using out app ❤</h3>
+            <h3>Thanks for using our app ❤</h3>
         </div>
       <button type="button" className='btn-danger' onClick={() => {
         navigate("/")
