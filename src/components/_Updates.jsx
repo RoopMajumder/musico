@@ -12,7 +12,7 @@ const Updates = () => {
                 <h2 style={{textAlign: "center"}}>Musico</h2>
             </div>
             <br />
-            <p>Musico is a powerful music player. With many songs Musico is one of the awesome apps in the category of Music.</p>
+            <p>Musico is a powerful music player. With many songs, Musico is one of the awesome apps in the category of Music.</p>
             <br />
             <p>Musico is made by <a href="https://instagram.com/roop_majumder5/" style={{fontWeight: 700, textDecoration: "none", color: "black"}}>Roop Majumder</a> from <a href="https://www.instagram.com/technical_earth_studios/"  style={{fontWeight: 700, textDecoration: "none", color: "black"}}>Technical Earth Studios</a>.</p>
             <br />
