@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import logo from "../assets/logo.svg"
 
 const Body = () => {
     const [query, setQuery] = useState("");
@@ -9,7 +10,7 @@ const Body = () => {
     useEffect(() => {
         document.title = "Musico - Roop Majumder"
         link.setAttribute("type", "image/svg+xml")
-        link.setAttribute("href", "../assets/logo.svg")
+        link.setAttribute("href", logo)
     }, [])
 
   return (

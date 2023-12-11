@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
+import logo from "../assets/logo.svg"
 
 const Player = () => {
     const {q} = useParams()
@@ -60,7 +61,7 @@ const Player = () => {
     else {
       document.title = "Musico - Roop Majumder"
       link.setAttribute("type", "image/svg+xml")
-      link.setAttribute("href", "../assets/logo.svg")
+      link.setAttribute("href", logo)
     }
 
     useEffect(() => {
