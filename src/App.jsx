@@ -6,6 +6,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom'
 import Body from './components/_Body'
 import Player from './components/_Player'
 import Updates from './components/_Updates'
+import PlayerID from './components/_PlayerID'
 // import InfoButton from './components/_InfoButton'
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
             <Route path='/' element={<Body/>}></Route>
             <Route path='/updates' element={<Updates/>}></Route>
             <Route path='/song/:q' element={<Player/>}></Route>
+            <Route path='/id/:q' element={<PlayerID/>}></Route>
           </Routes>
         </div>
         </HashRouter>

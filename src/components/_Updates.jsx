@@ -19,9 +19,10 @@ const Updates = () => {
             {/* updates */}
             <h3>-- Updates --</h3>
             <ul style={{listStyle: "inside", marginLeft: "10px"}}>
-                <li>Added the Updates Menu.</li>
+                {/* <li>Added the Updates Menu.</li> */}
                 <li>Added the option that when song is playing the logo and title will be shown.</li>
                 <li>Disabled song downloading.</li>
+                <li>Added option to share song.</li>
             </ul>
             <br />
             {/* coming soon */}
@@ -29,7 +30,7 @@ const Updates = () => {
             <ul style={{listStyle: "inside", marginLeft: "10px"}}>
                 <li>Lyrics for supported songs.</li>
                 <li>Option to embed song to HTML.</li>
-                <li>Option to like and share songs.</li>
+                <li>Option to like songs.</li>
             </ul>
             <br />
             {/* ending */}

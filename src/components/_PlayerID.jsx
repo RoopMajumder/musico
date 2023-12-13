@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import logo from "../assets/logo.svg"
 
-const Player = () => {
+const PlayerID = () => {
     const {q} = useParams()
     const link = document.querySelector('link[rel="icon"]');
     const [songData, setSongData] = useState()
@@ -11,11 +11,12 @@ const Player = () => {
     const navigate = useNavigate()
     // const [song, setSong] = useState()
 
-    let api = `https://saavn.me/search/songs?query=${q}`
+    let api = `https://saavn.me/songs?id=${q}`
     const getSongData = async () => {
         let response = await fetch(api)
         let data = await response.json()
-        setSongData(data?.data?.results[0])
+        // console.log(data)
+        setSongData(data?.data[0])
         // fetchSong(songData?.downloadUrl[songData?.downloadUrl?.length - 1]?.link)
         // console.log(song)
     }
@@ -76,7 +77,6 @@ const Player = () => {
       <h4 style={{ textAlign: "center" }} dangerouslySetInnerHTML={{
         __html: songData?.primaryArtists
       }}></h4>
-      {/* <p>{id}</p> */}
       <audio src={
         // songData?.downloadUrl[songData?.downloadUrl?.length - 1].link
         audioData
@@ -87,12 +87,12 @@ const Player = () => {
           navigate("/")
         }}>Go Back</button>
         <button type='button' className='btn' onClick={() => {
-          navigator.clipboard.writeText("http://localhost:5173/musico#/id/"+songData?.id)
-          alert("Link copied to clipboard.")
+            navigator.clipboard.writeText("http://localhost:5173/musico#/id/"+songData?.id)
+            alert("Link copied to clipboard.")
         }}>Share</button>
       </div>
     </div>
   )
 }
 
-export default Player
+export default PlayerID

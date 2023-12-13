@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import logo from "../assets/logo.svg"
+// import { FaSearch } from 'react-icons/fa'
 
 const Body = () => {
     const [query, setQuery] = useState("");
@@ -18,6 +19,7 @@ const Body = () => {
         <form onSubmit={(e) => e.preventDefault()} className='inputgroup'>
             <div className="inside">
                 <label htmlFor="#sni" id='snl'>Enter song name: </label>
+                {/* <FaSearch style={{border: "1px solid #A1A1A1", padding: "100px"}}/> */}
                 <input type="text" id='sni' placeholder='Enter song name...' value={query} onChange={(e) => {setQuery(e.target.value)}}/>
             </div>
             <div className="btn-group">
