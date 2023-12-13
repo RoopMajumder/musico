@@ -88,7 +88,7 @@ const Player = () => {
           navigate("/")
         }}>Go Back</button>
         <button type='button' className='btn' onClick={() => {
-            navigator.clipboard.writeText("http://localhost:5173/musico#/id/"+songData?.id)
+            navigator.clipboard.writeText("https://roopmajumder.github.io/musico/#/id/"+songData?.id)
             alert("Link copied to clipboard.")
         }}>Share</button>
       </div>
