@@ -70,7 +70,9 @@ const PlayerID = () => {
     }, []);
   return (
     <div className='player'>
-      <img src={songData?.image[songData?.image.length - 1].link} height="250" width="250" id="pli" style={{ borderRadius: "7px"}}/>
+        {
+        songData?<>
+        <img src={songData?.image[songData?.image.length - 1].link} height="250" width="250" id="pli" style={{ borderRadius: "7px"}}/>
       <h3 style={{ textAlign: "center" }} dangerouslySetInnerHTML={{
         __html: songData?.name
       }}></h3>
@@ -91,6 +93,13 @@ const PlayerID = () => {
             alert("Link copied to clipboard.")
         }}>Share</button>
       </div>
+        </>:<>
+        <h1>No Song Found :(</h1>
+        <button type="button" className='btn-danger' onClick={() => {
+          navigate("/")
+        }}>Go Back</button>
+        </>
+        }
     </div>
   )
 }
