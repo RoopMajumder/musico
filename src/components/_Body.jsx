@@ -7,6 +7,7 @@ const Body = () => {
     const [query, setQuery] = useState("");
     const link = document.querySelector('link[rel="icon"]');
     const navigate = useNavigate();
+    // const [darkTheme, setDarkTheme] = useState(false)
 
     useEffect(() => {
         document.title = "Musico - Roop Majumder"
@@ -15,7 +16,10 @@ const Body = () => {
     }, [])
 
   return (
-    <div>
+    <div
+    // style={{position: "relative"}}
+    >
+        {/* <button className="btn" onClick={() => setDarkTheme(!darkTheme)}></button> */}
         <form onSubmit={(e) => e.preventDefault()} className='inputgroup'>
             <div className="inside">
                 <label htmlFor="#sni" id='snl'>Enter song name: </label>
@@ -40,4 +44,5 @@ const Body = () => {
   )
 }
 
+// export 
 export default Body
