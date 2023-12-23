@@ -23,8 +23,9 @@ const Updates = () => {
                 {/* <li>Added the option that when song is playing the logo and title will be shown.</li> */}
                 {/* <li>Disabled song downloading.</li> */}
                 {/* <li>Added option to share song.</li> */}
-                <li>Added information about unavailability of Songs.</li>
+                {/* <li>Added information about unavailability of Songs.</li> */}
                 <li>Added search results page for better experience.</li>
+                <li>Updates the User Interface (UI).</li>
             </ul>
             <br />
             {/* coming soon */}
