@@ -76,7 +76,7 @@ const PlayerID = () => {
       <h3 style={{ textAlign: "center" }} dangerouslySetInnerHTML={{
         __html: songData?.name
       }}></h3>
-      <h4 style={{ textAlign: "center" }} dangerouslySetInnerHTML={{
+      <h4 style={{ textAlign: "center", padding: "0 12px" }} dangerouslySetInnerHTML={{
         __html: songData?.primaryArtists
       }}></h4>
       <audio src={
