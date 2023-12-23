@@ -28,7 +28,7 @@ const Body = () => {
                     alert("Enter a valid name!")
                     return;
                 }
-                navigate("/song/"+query)
+                navigate("/search/"+query)
                 }
             }>Search</button>
             <button type="button" className='btn' onClick={() => {

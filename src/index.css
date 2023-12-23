@@ -218,3 +218,69 @@ input:focus {
     text-align: center;
   }
 }
+
+.searchQuerySongDiv {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+  padding: 4px 5px;
+  border-radius: 4px;
+  transition: all ease-in-out .5s;
+}
+
+.searchQuerySongDiv:hover {
+  background-color: #1A1A1A;
+  color: #F1F1F1;
+}
+
+.searchQuerySongDiv .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* text-wrap: nowrap; */
+  /* white-space: nowrap;  */
+  overflow: hidden;
+  /* text-overflow: clip; */
+  /* width: 100%; */
+}
+
+.searchQuerySongDiv .info h4 {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.searchQuerySongDiv .info h3 {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.searchResults {
+  height: 70%;
+  width: 90%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.searchPage {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.searchPage .search {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 10px;
+}
