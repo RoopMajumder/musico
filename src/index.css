@@ -198,6 +198,17 @@ input:focus {
   border: 0;
 } */
 
+
+
+#sirb {
+  display: none;
+}
+
+#sibr:hover {
+  color: white;
+  background-color: green;
+}
+
 @media screen and (max-width: 650px) {
   #body {
     width: 340px;
@@ -217,6 +228,39 @@ input:focus {
     display: block;
     text-align: center;
   }
+
+ #srb {
+    display: none;
+  }
+
+  #lsr {
+    display: none;
+  }
+
+  #sirb {
+    display: flex;
+  }
+}
+
+.btn-icon {
+  /* padding: 0; */
+  height: 28px;
+  width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  color: green;
+  background-color: transparent;
+  border: 1px solid green;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.btn-icon:hover {
+  color: white;
+  background-color: green;
 }
 
 .searchQuerySongDiv {
@@ -281,6 +325,6 @@ input:focus {
 .searchPage .search {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   gap: 10px;
 }
