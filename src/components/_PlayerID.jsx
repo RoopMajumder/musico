@@ -92,10 +92,10 @@ const PlayerID = () => {
             navigator.clipboard.writeText("https://roopmajumder.github.io/musico/#/id/"+songData?.id)
             alert("Link copied to clipboard.")
         }}>Share</button>
-        <button type="button" className='btn' onClick={() => {
+        {/* <button type="button" className='btn' onClick={() => {
           navigator.clipboard.writeText(`<iframe src="https://roopmajumder.github.io/musico/#/embed/${songData?.id}" height="550" width="340"></iframe>`)
           alert("Copied Embed.")
-        }}>Embed</button>
+        }}>Embed</button> */}
       </div>
         </>:<>
         <h1>No Song Found :(</h1>

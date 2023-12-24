@@ -9,7 +9,7 @@ import Player from './components/_Player'
 import Updates from './components/_Updates'
 import PlayerID from './components/_PlayerID'
 import SearchResults from './components/_SearchResults'
-import Embed from './components/_Embed'
+// import Embed from './components/_Embed'
 // import InfoButton from './components/_InfoButton'
 
 function App() {
@@ -50,7 +50,7 @@ function App() {
             <Route path='/search/:q' element={<SearchResults/>}></Route>
             {/* <Route path='/song/:q' element={<Player/>}></Route> */}
             <Route path='/id/:q' element={<PlayerID/>}></Route>
-            <Route path='/embed/:id' element={<Embed/>}></Route>
+            {/* <Route path='/embed/:id' element={<Embed/>}></Route> */}
           </Routes>
         </div>
         </HashRouter>
