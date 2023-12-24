@@ -25,7 +25,7 @@ const Updates = () => {
                 {/* <li>Added option to share song.</li> */}
                 {/* <li>Added information about unavailability of Songs.</li> */}
                 <li>Added search results page for better experience.</li>
-                <li>Updates the User Interface (UI).</li>
+                <li>Updated the User Interface (UI).</li>
             </ul>
             <br />
             {/* coming soon */}
