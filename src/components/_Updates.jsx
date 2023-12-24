@@ -4,6 +4,11 @@ import logo from '../assets/logo.svg'
 
 const Updates = () => {
     const navigate = useNavigate()
+
+    const listOptions = {
+      done: "line-through",
+      none: "none"
+    }
   return (
     <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
         <div className="info-container" style={{overflowY: "scroll"}}>
@@ -26,13 +31,14 @@ const Updates = () => {
                 {/* <li>Added information about unavailability of Songs.</li> */}
                 <li>Added search results page for better experience.</li>
                 <li>Updated the User Interface (UI).</li>
+                <li>Option to embed song to HTML.</li>
             </ul>
             <br />
             {/* coming soon */}
             <h3>-- Coming Soon --</h3>
             <ul style={{listStyle: "inside", marginLeft: "10px"}}>
                 <li>Lyrics for supported songs.</li>
-                <li>Option to embed song to HTML.</li>
+                <li style={{ textDecoration: listOptions.done }}>Option to embed song to HTML.</li>
                 <li>Option to like songs.</li>
             </ul>
             <br />

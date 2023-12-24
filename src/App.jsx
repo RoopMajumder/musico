@@ -2,13 +2,14 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import logo from './assets/logo.svg'
-import './App.css'
+// import './App.css'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import Body from './components/_Body'
 import Player from './components/_Player'
 import Updates from './components/_Updates'
 import PlayerID from './components/_PlayerID'
 import SearchResults from './components/_SearchResults'
+import Embed from './components/_Embed'
 // import InfoButton from './components/_InfoButton'
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p> */}
       <div className="main" 
-      onContextMenu={(e) => e.preventDefault()}
+      // onContextMenu={(e) => e.preventDefault()}
       >
         <HashRouter>
         <div id="body">
@@ -49,6 +50,7 @@ function App() {
             <Route path='/search/:q' element={<SearchResults/>}></Route>
             {/* <Route path='/song/:q' element={<Player/>}></Route> */}
             <Route path='/id/:q' element={<PlayerID/>}></Route>
+            <Route path='/embed/:id' element={<Embed/>}></Route>
           </Routes>
         </div>
         </HashRouter>
