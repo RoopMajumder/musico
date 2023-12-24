@@ -38,7 +38,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p> */}
       <div className="main" 
-      // onContextMenu={(e) => e.preventDefault()}
+      onContextMenu={(e) => e.preventDefault()}
       >
         <HashRouter>
         <div id="body">
