@@ -20,7 +20,7 @@ const Updates = () => {
   return (
     <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
         <div className="info-container" style={{overflowY: "scroll"}}>
-            <div className="title" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+            <div className="title" style={{display: "flex", gap: "10px", justifyContent: "center", alignItems: "center"}}>
                 <img src={logo} height={50} width={50} />
                 <h2 style={{textAlign: "center"}}>Musico</h2>
             </div>

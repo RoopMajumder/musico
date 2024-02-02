@@ -336,6 +336,7 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 .loadingCont h1 {
   animation-name: text-splash-large;
@@ -350,14 +351,14 @@ input:focus {
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-fill-mode: none;
+  height: 60px;
+  width: 60px;
   
 }
 
 @keyframes splash-large {
   0% {
     opacity: 0.1;
-    height: calc(50%-50px);
-    width: calc(50%-50px);
     /* font-size: large; */
     /* transform: scale(1px); */
   }
@@ -367,8 +368,6 @@ input:focus {
   }
   100% {
     opacity: 0.1;
-    height: calc(50%-70px);
-    width: calc(50%-70px);
     /* font-size: large; */
     /* transform: scale(50px); */
   }
