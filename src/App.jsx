@@ -23,10 +23,15 @@ function App() {
   }, [])
 
   return  isLoading ? 
+  <>
     <div className="loadingCont">
       <img src={logo} />
       <h1>Musico.</h1>
     </div>
+    <div className="bottom">
+      <p className='cr'>Made with ❤ by <a href="https://www.instagram.com/roop_majumder5/" target='_blank'>Roop Majumder</a>.</p>
+    </div>
+  </>
     :
     <>
       {/* <div>

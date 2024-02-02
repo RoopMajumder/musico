@@ -90,6 +90,22 @@ body {
   flex-direction: column;
 }
 
+.cr {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.cr a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 1.5s;
+}
+
+.cr a:hover {
+  color: white;
+}
+
 .main #cr {
   padding: 10px 0;
   text-align: center;
@@ -354,6 +370,15 @@ input:focus {
   height: 60px;
   width: 60px;
   
+}
+
+.bottom {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes splash-large {
