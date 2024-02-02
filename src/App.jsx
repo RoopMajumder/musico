@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import logo from './assets/logo.svg'
@@ -13,9 +13,21 @@ import SearchResults from './components/_SearchResults'
 // import InfoButton from './components/_InfoButton'
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true)
   // const [count, setCount] = useState(0)
 
-  return (
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false)
+    }, 3000)
+  }, [])
+
+  return  isLoading ? 
+    <div className="loadingCont">
+      <img src={logo} />
+      <h1>Musico.</h1>
+    </div>
+    :
     <>
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
@@ -57,7 +69,7 @@ function App() {
       <p id='cr'>&copy; Copyright: All Rights Reserved. Made with ❤ by <a href="https://www.instagram.com/roop_majumder5/" target='_blank'>Roop Majumder</a>.</p>
       </div>
     </>
-  )
+  
 }
 
 export default App

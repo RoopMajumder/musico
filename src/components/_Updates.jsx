@@ -39,6 +39,7 @@ const Updates = () => {
                 {/* <li>Added information about unavailability of Songs.</li> */}
                 <li>Added search results page for better experience.</li>
                 <li>Updated the User Interface (UI).</li>
+                <li>Added a Splash Screen.</li>
             </ul>
             <br />
             {/* coming soon */}
