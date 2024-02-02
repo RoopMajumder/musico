@@ -24,7 +24,9 @@ function App() {
 
   return  isLoading ? 
   <>
-    <div className="loadingCont">
+    <div className="loadingCont"
+    onContextMenu={(e) => e.preventDefault()}
+    >
       <img src={logo} />
       <h1>Musico.</h1>
     </div>
