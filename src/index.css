@@ -411,3 +411,69 @@ input:focus {
     opacity: 0.1;
   }
 }
+
+.bodyDiv {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ts {
+  height: 70%;
+  width: 95%;
+}
+
+.trendingsPage {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.trendingsPage .trendingCont {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.trendingsPage .trendingCont .trendingSongDiv {
+  display: flex;
+  gap: 7px;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 1.2s;
+}
+
+.trendingsPage .trendingCont .trendingSongDiv:hover {
+  background-color: #252525;
+  color: white;
+}
+
+.trendingSongDiv .info h4 {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.trendingSongDiv .info h3 {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.trendingSongDiv .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* text-wrap: nowrap; */
+  /* white-space: nowrap;  */
+  overflow: hidden;
+  /* text-overflow: clip; */
+  /* width: 100%; */
+}

@@ -25,6 +25,8 @@ const Updates = () => {
                 <h2 style={{textAlign: "center"}}>Musico</h2>
             </div>
             <br />
+            <h3>Musico Version: 1.1</h3>
+            <br></br>
             <p>Musico is a powerful music player. With many songs, Musico is one of the awesome apps in the category of Music.</p>
             <br />
             <p>Musico is made by <a href="https://instagram.com/roop_majumder5/" style={{fontWeight: 700, textDecoration: "none", color: "black"}}>Roop Majumder</a> from <a href="https://www.instagram.com/technical_earth_studios/"  style={{fontWeight: 700, textDecoration: "none", color: "black"}}>Technical Earth Studios</a>.</p>
@@ -38,9 +40,10 @@ const Updates = () => {
                 {/* <li>Added option to share song.</li> */}
                 {/* <li>Added information about unavailability of Songs.</li> */}
                 {/* <li>Added search results page for better experience.</li> */}
-                <li>Updated the User Interface (UI).</li>
                 <li>Added a Splash Screen.</li>
                 <li>Updated our logo.</li>
+                <li>Updated the User Interface (UI).</li>
+                <li>Added Top Songs List.</li>
             </ul>
             <br />
             {/* coming soon */}

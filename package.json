@@ -2,7 +2,7 @@
   "homepage": "https://RoopMajumder.github.io/musico",
   "name": "musicappsolo",
   "private": false,
-  "version": "0.2.45",
+  "version": "1.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
