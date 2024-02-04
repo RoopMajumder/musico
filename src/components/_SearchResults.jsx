@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect, useRef } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import { host } from '../configs/api'
 
 const SearchResults = () => {
     const { q } = useParams()
@@ -10,7 +11,7 @@ const SearchResults = () => {
     const [searchText, setSearchText] = useState(q)
     const navigate = useNavigate()
 
-    let api = `https://saavn.me/search/songs?query=${searchText}`
+    let api = `${host}/search/songs?query=${searchText}`
     const getSearchResults = async () => {
         let response = await fetch(api)
         let data = await response.json()

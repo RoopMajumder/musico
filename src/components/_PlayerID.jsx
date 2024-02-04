@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import logo from "../assets/logo.svg"
+import { host } from '../configs/api'
 
 const PlayerID = () => {
     const {q} = useParams()
@@ -11,7 +12,7 @@ const PlayerID = () => {
     const navigate = useNavigate()
     // const [song, setSong] = useState()
 
-    let api = `https://saavn.me/songs?id=${q}`
+    let api = `${host}/songs?id=${q}`
     const getSongData = async () => {
         let response = await fetch(api)
         let data = await response.json()

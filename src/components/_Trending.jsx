@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { host } from '../configs/api'
 
 const Trending = () => {
   const [trendingData, setTrendingData] = useState([])
 
   useEffect(() => {
     const getTrendingData = async () => {
-      let api = "https://saavn.me/playlists?id=1179495885"
+      let api = `${host}/playlists?id=1179495885`
       let response = await fetch(api)
       let data = await response.json()
       setTrendingData(data.data.songs)
