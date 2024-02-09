@@ -45,6 +45,7 @@ const Updates = () => {
                 <li>Updated the User Interface (UI).</li>
                 <li>Added Top Songs List.</li>
                 <li>Fixed Songs not Rendering Problems.</li>
+                <li>Added More Songs.</li>
             </ul>
             <br />
             {/* coming soon */}
