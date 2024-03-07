@@ -40,12 +40,13 @@ const Updates = () => {
                 {/* <li>Added option to share song.</li> */}
                 {/* <li>Added information about unavailability of Songs.</li> */}
                 {/* <li>Added search results page for better experience.</li> */}
-                <li>Added a Splash Screen.</li>
+                {/* <li>Added a Splash Screen.</li> */}
                 <li>Updated our logo.</li>
                 <li>Updated the User Interface (UI).</li>
                 <li>Added Top Songs List.</li>
                 <li>Fixed Songs not Rendering Problems.</li>
                 <li>Added More Songs.</li>
+                <li>Updated Trending Songs.</li>
             </ul>
             <br />
             {/* coming soon */}

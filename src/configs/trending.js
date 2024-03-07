@@ -12,16 +12,16 @@ export const mostTrending = [
         title: "Dagabaaz Re"
     },
     {
-        id: "KFcbby8R",
-        cover: "https://c.saavncdn.com/238/Shershaah-Original-Motion-Picture-Soundtrack--Hindi-2021-20210815181610-500x500.jpg",
-        artists: "Jasleen Royal, B Praak, Romy, Anvita Dutt Guptan",
-        title: "Ranjha"
+        id: "W-d2FbBr",
+        cover: "https://c.saavncdn.com/879/Alag-Aasmaan-Unknown-2020-20200716212927-500x500.jpg",
+        artists: "Anuv Jain",
+        title: "Alag Aasmaan"
     },
     {
-        id: "6o8JoQ8b",
-        cover: "https://c.saavncdn.com/286/WMG_190295851286-English-2017-500x500.jpg",
-        artists: "Ed Sheeran",
-        title: "Perfect"
+        id: "9phZa6Mc",
+        cover: "https://c.saavncdn.com/139/Dunki-Hindi-2023-20231220211003-500x500.jpg",
+        artists: "Pritam, Arijit Singh, Swanand Kirkire, IP Singh",
+        title: "Lutt Putt Gaya"
     },
     {
         id: "JJDnpfBX",
