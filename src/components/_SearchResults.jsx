@@ -45,10 +45,16 @@ const SearchResults = () => {
             {searchData?searchData?.map((song, key) => {
                 return <Link to={"/id/"+song.id} style={{textDecoration: "none", color: "black"}} key={key}>
                     <div className="searchQuerySongDiv">
-                        <img src={song?.image[song?.image?.length - 1]?.link} alt="" className="img" width={50}/>
+                        <img src={song?.image[song?.image?.length - 1]?.url} alt="" className="img" width={50}/>
                         <div className="info">
                             <h3 dangerouslySetInnerHTML={{__html: song?.name}}></h3>
-                            <h4 dangerouslySetInnerHTML={{__html: song?.primaryArtists}}></h4>
+                            <h4 dangerouslySetInnerHTML={{
+                            __html: song?.artists?.primary?.map((item, no) => {
+                                let string = ""
+                                string += " " + item?.name
+                                return string
+                            })
+                            }}></h4>
                         </div>
                     </div>
                 </Link>
