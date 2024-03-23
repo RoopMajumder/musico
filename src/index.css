@@ -477,3 +477,8 @@ input:focus {
   /* text-overflow: clip; */
   /* width: 100%; */
 }
+
+.btn-disabled:hover {
+  background-color: #F1F1F1;
+  cursor: auto;
+}
