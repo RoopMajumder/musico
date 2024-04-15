@@ -30,7 +30,7 @@ const PlayerID = () => {
       }
       document.title = `${r} - Musico`
       link.setAttribute("type", "image/jpeg")
-      link.setAttribute("href", songData?.image[songData?.image.length - 1]?.link)
+      link.setAttribute("href", songData?.image[songData?.image.length - 1].url)
     }
     // const fetchSong = async (s) => {
     //     let response = await fetch(s)
