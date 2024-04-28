@@ -1,32 +1,32 @@
 export const mostTrending = [
     {
+        id: "7CwLvXc6",
+        cover: "https://c.saavncdn.com/256/Shree-Hanuman-Chalisa-Hanuman-Ashtak-Hindi-1992-20230904173628-500x500.jpg",
+        artists: "Hariharan",
+        title: "Shree Hanuman Chalisa"
+    },
+    {
         id: "wcsDiSsA",
         cover: "https://c.saavncdn.com/139/Dunki-Hindi-2023-20231220211003-500x500.jpg",
-        artists: "Pritam, Arijit Singh, Irshad Kamil",
+        artists: " Pritam, Arijit Singh, Irshad Kamil",
         title: "O Maahi"
     },
     {
-        id: "UJ0dGLpm",
-        cover: "https://c.saavncdn.com/652/Dabangg-2-Hindi-2012-20221213012606-500x500.jpg",
-        artists: "Rahat Fateh Ali Khan, Shreya Ghoshal",
-        title: "Dagabaaz Re"
-    },
-    {
-        id: "W-d2FbBr",
-        cover: "https://c.saavncdn.com/879/Alag-Aasmaan-Unknown-2020-20200716212927-500x500.jpg",
+        id: "X0zxHHfs",
+        cover: "https://c.saavncdn.com/436/Husn-Hindi-2023-20231129054140-500x500.jpg",
         artists: "Anuv Jain",
-        title: "Alag Aasmaan"
+        title: "Husn"
     },
     {
-        id: "9phZa6Mc",
-        cover: "https://c.saavncdn.com/139/Dunki-Hindi-2023-20231220211003-500x500.jpg",
-        artists: "Pritam, Arijit Singh, Swanand Kirkire, IP Singh",
-        title: "Lutt Putt Gaya"
+        id: "qZtKBMZ_",
+        cover: "https://c.saavncdn.com/815/Bhediya-Hindi-2023-20230927155213-500x500.jpg",
+        artists: "Sachin-Jigar, Arijit Singh",
+        title: "Apna Bana Le"
     },
     {
-        id: "JJDnpfBX",
-        cover: "https://c.saavncdn.com/825/My-Name-Is-Khan-Hindi-2010-20210528120940-500x500.jpg",
-        artists: "Shankar-Ehsaan-Loy, Shafqat Amanat Ali",
-        title: "Tere Naina"
+        id: "inYsaOZR",
+        cover: "https://c.saavncdn.com/397/Tu-hai-kahan-Hindi-2023-20231016122634-500x500.jpg",
+        artists: "AUR",
+        title: "Tu hai kahan"
     },
 ]
